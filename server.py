@@ -10,7 +10,7 @@ from app import chain
 app = FastAPI(
     title="First Langchain Deployment",
     version="1.0",
-    description="A deployment for out text translation application"
+    description="A deployment for our text translation application"
 )
 
 #2. Add the chain to the route

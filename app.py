@@ -14,8 +14,11 @@ parser = StrOutputParser()
 
 #Create the prompt
 system_template = "Translate the following into {language}:"
+
+user_template = "{text}"
+
 prompt_template = ChatPromptTemplate.from_messages(
-    [("system",system_template), ("user", "{text}")]
+    [("system",system_template), ("user", user_template)]
 )
 
 #Create the chain
